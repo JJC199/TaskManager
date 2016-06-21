@@ -1,11 +1,6 @@
 #include "work_task.h"
 
-work_task::work_task(QString nombre, QString descripcion)
+work_task::work_task()
 {
-    setName(nombre);
-    setDesc(descripcion);
-}
 
-int work_task::getType(){
-    return type;
 }

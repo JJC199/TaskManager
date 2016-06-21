@@ -7,11 +7,7 @@
 class otheractivities_task:public Task
 {
 public:
-    otheractivities_task(QString nombre, QString descripcion);
-    getType();
-private:
-    //Tipo de task, referencia para adicion de colores.
-    int type = 4;
+    otheractivities_task();
 };
 
 #endif // OTHERACTIVITIES_TASK_H

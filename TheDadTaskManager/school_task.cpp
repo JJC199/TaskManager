@@ -1,11 +1,6 @@
 #include "school_task.h"
 
-school_task::school_task(QString nombre, QString descripcion)
+school_task::school_task()
 {
-    setName(nombre);
-    setDesc(descripcion);
-}
 
-int school_task::getType(){
-    return type;
 }

@@ -1,11 +1,6 @@
 #include "otheractivities_task.h"
 
-otheractivities_task::otheractivities_task(QString nombre, QString descripcion)
+otheractivities_task::otheractivities_task()
 {
-    setName(nombre);
-    setDesc(descripcion);
-}
 
-int otheractivities_task::getType(){
-    return type;
 }

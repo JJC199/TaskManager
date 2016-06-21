@@ -18,10 +18,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 private slots:
-    void workTask_clicked();
-    void schoolTask_clicked();
-    void homeTask_clicked();
-    void oaTask_clicked();
+    void on_newTask_clicked();
 
 private:
     Ui::MainWindow *ui;

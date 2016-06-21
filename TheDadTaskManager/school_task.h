@@ -6,11 +6,7 @@
 class school_task:public Task
 {
 public:
-    school_task(QString nombre, QString descripcion);
-    getType();
-private:
-    //Tipo de task, referencia para adicion de colores.
-    int type = 3;
+    school_task();
 };
 
 #endif // SCHOOL_TASK_H

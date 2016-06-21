@@ -2,11 +2,10 @@
 #define TASKCOLLECTION_H
 #include "task.h"
 
-
-class TaskCollection
+class taskcollection
 {
 public:
-    TaskCollection();
+    taskcollection();
     Task getTaskAt(int position);
     void removeTaskAt(int position);
     void addTask(Task addition);

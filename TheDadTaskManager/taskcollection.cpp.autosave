@@ -27,3 +27,5 @@ void taskcollection::addTask(Task addition){
             if(!tasklist[x].ifActive())
                 tasklist[x] = addition;
 }
+
+

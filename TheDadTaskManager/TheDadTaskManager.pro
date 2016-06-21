@@ -13,21 +13,25 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     task.cpp \
     work_task.cpp \
     school_task.cpp \
     otheractivities_task.cpp \
     home_task.cpp \
-    newtask_form.cpp
+    mainwindow.cpp \
+    newtask.cpp \
+    taskcollection.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     task.h \
     work_task.h \
     school_task.h \
     otheractivities_task.h \
     home_task.h \
-    newtask_form.h
+    mainwindow.h \
+    newtask.h \
+    taskcollection.h
 
-FORMS    += mainwindow.ui \
-    newtask_form.ui
+FORMS    += \
+    mainwindow.ui \
+    newtask.ui

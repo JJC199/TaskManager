@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     school_task.cpp \
     otheractivities_task.cpp \
     home_task.cpp \
-    newtask_form.cpp
+    newtask_form.cpp \
+    taskcollection.cpp
 
 HEADERS  += mainwindow.h \
     task.h \
@@ -27,7 +28,8 @@ HEADERS  += mainwindow.h \
     school_task.h \
     otheractivities_task.h \
     home_task.h \
-    newtask_form.h
+    newtask_form.h \
+    taskcollection.h
 
 FORMS    += mainwindow.ui \
     newtask_form.ui

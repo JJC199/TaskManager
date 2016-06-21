@@ -6,6 +6,7 @@
 #include "otheractivities_task.h"
 #include "newtask_form.h"
 #include "ui_newtask_form.h"
+#include "task.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 }
+
 MainWindow::~MainWindow()
 {
     delete ui;

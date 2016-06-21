@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\task.o
+./debug\work_task.o
+./debug\school_task.o
+./debug\otheractivities_task.o
+./debug\home_task.o
+./debug\newtask_form.o
+./debug\taskcollection.o
+./debug\moc_mainwindow.o
+./debug\moc_newtask_form.o
+);

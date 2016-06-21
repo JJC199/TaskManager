@@ -21,7 +21,7 @@ void Task::setDesc(QString desc){
     description = desc;
 }
 
-boolean Task::ifActive(){
+bool Task::ifActive(){
     return active;
 }
 

@@ -7,12 +7,12 @@ class TaskCollection
 {
 public:
     TaskCollection();
-    task getTaskAt(int position);
+    Task getTaskAt(int position);
     void removeTaskAt(int position);
-    void addTask(task addition);
+    void addTask(Task addition);
 private:
     //Arreglo de tasks, maximos de 15.
-    task tasklist[15];
+    Task tasklist[15];
 };
 
 #endif // TASKCOLLECTION_H

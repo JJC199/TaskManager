@@ -9,17 +9,17 @@ public:
     Task();
     QString getName();
     QString getDesc();
-    void setName();
-    void setDesc();
+    void setName(QString nombre);
+    void setDesc(QString descripcion);
     int getType();
-    boolean ifActive();
+    bool ifActive();
     void setInactive();
 private:
     QString name;
     QString description;
     //Tipo de task, referencia para adicion de colores.
     int type = 0;
-    boolean active = true;
+    bool active = true;
 };
 
 #endif // TASK_H

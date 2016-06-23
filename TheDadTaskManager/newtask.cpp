@@ -15,12 +15,12 @@ newtask::~newtask()
 
 void newtask::on_pushButton_clicked()
 {
+    //Guarda el texto de el titulo y la descripcion en variables.
     QString title = ui->lineEdit->text();
     QString desc = ui->textEdit->toPlainText();
 
     //Revisa cual tarea esta seleccionada y llama a la funcion basado en el tipo.
     if(ui->comboBox->currentText() == "Work"){
-
         TC->addTask(work_task(title, "" + desc));
     }else if(ui->comboBox->currentText() == "Home"){
         TC->addTask(home_task(title, "" + desc));

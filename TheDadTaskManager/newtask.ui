@@ -128,19 +128,6 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>130</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>hola</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>

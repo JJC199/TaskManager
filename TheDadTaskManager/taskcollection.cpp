@@ -3,7 +3,7 @@
 taskcollection::taskcollection()
 {
     for(int x = 0; x < 15; x++){
-        tasklist[x] = new Task();
+        tasklist[x] = Task();
         tasklist[x].setInactive();
     }
 }

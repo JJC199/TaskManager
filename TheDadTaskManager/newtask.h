@@ -3,7 +3,6 @@
 
 #include <QDialog>
 #include "taskcollection.h"
-#include "task.h"
 #include "work_task.h"
 #include "home_task.h"
 #include "school_task.h"

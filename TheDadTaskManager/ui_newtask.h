@@ -34,7 +34,6 @@ public:
     QComboBox *comboBox;
     QLabel *label_3;
     QTextEdit *textEdit;
-    QLabel *label_4;
 
     void setupUi(QDialog *newtask)
     {
@@ -65,9 +64,6 @@ public:
         textEdit = new QTextEdit(newtask);
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(20, 90, 191, 211));
-        label_4 = new QLabel(newtask);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(270, 130, 111, 41));
 
         retranslateUi(newtask);
 
@@ -89,7 +85,6 @@ public:
          << QApplication::translate("newtask", "Other Activities", 0)
         );
         label_3->setText(QApplication::translate("newtask", "Task Type", 0));
-        label_4->setText(QApplication::translate("newtask", "hola", 0));
     } // retranslateUi
 
 };

@@ -1,13 +1,13 @@
 INPUT(
 ./release\main.o
-./release\mainwindow.o
 ./release\task.o
 ./release\work_task.o
 ./release\school_task.o
 ./release\otheractivities_task.o
 ./release\home_task.o
-./release\newtask_form.o
+./release\mainwindow.o
+./release\newtask.o
 ./release\taskcollection.o
 ./release\moc_mainwindow.o
-./release\moc_newtask_form.o
+./release\moc_newtask.o
 );

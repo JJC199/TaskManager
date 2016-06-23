@@ -2,7 +2,8 @@
 
 Task::Task()
 {
-    //Ya que no usaremos la clase padre para crear, esto se queda vacio. Saludos.
+    name = "Sample";
+    description = "Sample";
 }
 
 QString Task::getName(){

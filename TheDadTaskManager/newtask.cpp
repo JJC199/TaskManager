@@ -16,8 +16,11 @@ newtask::~newtask()
 void newtask::on_pushButton_clicked()
 {
     QString title = ui->lineEdit->text();
+    QString desc = ui->textEdit->toPlainText();
 
-    if(ui->comboBox->currentText() == Work){
-        TC->addTask();
+    if(ui->comboBox->currentText() == "Work"){
+
+        TC->addTask(work_task(title, desc));
     }
+    ui->label_4->setText((TC->getTaskAt(0).getName()));
 }

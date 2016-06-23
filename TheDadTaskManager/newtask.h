@@ -2,8 +2,12 @@
 #define NEWTASK_H
 
 #include <QDialog>
-
 #include "taskcollection.h"
+#include "task.h"
+#include "work_task.h"
+#include "home_task.h"
+#include "school_task.h"
+#include "otheractivities_task.h"
 
 namespace Ui {
 class newtask;
@@ -21,6 +25,7 @@ private slots:
     void on_pushButton_clicked();
 
 private:
+    taskcollection *TC = new taskcollection();
     Ui::newtask *ui;
 };
 

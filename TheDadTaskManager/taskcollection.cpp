@@ -2,15 +2,18 @@
 
 taskcollection::taskcollection()
 {
-
+    for(int x = 0; x < 15; x++){
+        tasklist[x] = new Task();
+        tasklist[x].setInactive();
+    }
 }
 
 Task taskcollection::getTaskAt(int position){
-      if(position > 0 && position <= 15)
-          for(int x = 0; x < 15; x++)
-              if((x + 1) == position)
-                  return tasklist[x];
-     return tasklist[0];
+    if(position >= 0 && position < 15)
+        for(int x = 0; x < 15; x++)
+            if((x) == position)
+                return tasklist[x];
+    return tasklist[0];
 }
 
 void taskcollection::removeTaskAt(int position){
@@ -22,8 +25,7 @@ void taskcollection::removeTaskAt(int position){
 }
 
 void taskcollection::addTask(Task addition){
-      for(int x = 0; x < 15; x++)
+    for(int x = 0; x < 15; x++)
         if(!tasklist[x].ifActive())
-            if(!tasklist[x].ifActive())
-                tasklist[x] = addition;
+            tasklist[x] = addition;
 }

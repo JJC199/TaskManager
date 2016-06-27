@@ -17,16 +17,15 @@ MainWindow::~MainWindow()
 void MainWindow::refresh(){
     ui->textleft1->setText(TC->getTaskAt(taskselector).getName());
     ui->textleft2->setText(TC->getTaskAt(taskselector).getDesc());
-    if(TC->getTaskAt(taskselector).getType() == 1){
-        ui->type->setText("Home");
-    }else if(TC->getTaskAt(taskselector).getType() == 2){
+
+    if(ui->comboBox->currentText() == "Work"){
         ui->type->setText("Work");
-    }else if(TC->getTaskAt(taskselector).getType() == 3){
+    }else if(ui->comboBox->currentText() == "Home"){
+        ui->type->setText("Home");
+    }else if(ui->comboBox->currentText() == "School"){
         ui->type->setText("School");
-    }else if(TC->getTaskAt(taskselector).getType() == 4){
+    }else if(ui->comboBox->currentText() == "Other Activities"){
         ui->type->setText("Other Activities");
-    }else if(TC->getTaskAt(taskselector).getType() == 0){
-        ui->type->setText("Empty task...");
     }
 }
 
@@ -48,13 +47,13 @@ void MainWindow::on_create_clicked()
 
     //Revisa cual tarea esta seleccionada y llama a la funcion basado en el tipo.
     if(ui->comboBox->currentText() == "Work"){
-        TC->addTask(work_task(title, "" + desc));
+        TC->addTask(work_task(title, desc));
     }else if(ui->comboBox->currentText() == "Home"){
-        TC->addTask(home_task(title, "" + desc));
+        TC->addTask(home_task(title, desc));
     }else if(ui->comboBox->currentText() == "School"){
-        TC->addTask(school_task(title, "" + desc));
+        TC->addTask(school_task(title, desc));
     }else if(ui->comboBox->currentText() == "Other Activities"){
-        TC->addTask(otheractivities_task(title, "" + desc));
+        TC->addTask(otheractivities_task(title, desc));
     }
 }
 

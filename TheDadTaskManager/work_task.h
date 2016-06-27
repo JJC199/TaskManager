@@ -7,10 +7,9 @@ class work_task : public Task
 {
 public:
     work_task(QString nombre, QString descripcion);
-    getType();
 private:
     //Tipo de task, referencia para adicion de colores.
-    int type = 2;
+    QString type = "Work";
 };
 
 #endif // WORK_TASK_H

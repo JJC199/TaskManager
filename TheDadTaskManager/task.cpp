@@ -22,7 +22,7 @@ void Task::setDesc(QString desc){
     description = desc;
 }
 
-int Task::getType(){
+QString Task::getType(){
     return type;
 }
 

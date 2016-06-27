@@ -7,10 +7,9 @@ class home_task:public Task
 {
 public:
     home_task(QString nombre, QString descripcion);
-    getType();
 private:
     //Tipo de task, referencia para adicion de colores.
-    int type = 1;
+    QString type = "Home";
 };
 
 #endif // HOME_TASK_H

@@ -94,7 +94,7 @@ public:
         create->setGeometry(QRect(750, 320, 91, 23));
         counter = new QLabel(centralwidget);
         counter->setObjectName(QStringLiteral("counter"));
-        counter->setGeometry(QRect(10, 150, 71, 31));
+        counter->setGeometry(QRect(270, 320, 71, 31));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(100, 320, 81, 21));

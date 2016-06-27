@@ -11,14 +11,14 @@ public:
     QString getDesc();
     void setName(QString nombre);
     void setDesc(QString descripcion);
-    int getType();
+    QString getType();
     bool ifActive();
     void setInactive();
 private:
     QString name;
     QString description;
     //Tipo de task, referencia para adicion de colores.
-    int type = 0;
+    QString type = "Empty task...";
     bool active = true;
 };
 

@@ -22,6 +22,10 @@ void Task::setDesc(QString desc){
     description = desc;
 }
 
+int Task::getType(){
+    return type;
+}
+
 bool Task::ifActive(){
     return active;
 }

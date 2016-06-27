@@ -5,12 +5,29 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    taskselector = 0;
     ui->setupUi(this);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::refresh(){
+    ui->textleft1->setText(TC->getTaskAt(taskselector).getName());
+    ui->textleft2->setText(TC->getTaskAt(taskselector).getDesc());
+    if(TC->getTaskAt(taskselector).getType() == 1){
+        ui->type->setText("Home");
+    }else if(TC->getTaskAt(taskselector).getType() == 2){
+        ui->type->setText("Work");
+    }else if(TC->getTaskAt(taskselector).getType() == 3){
+        ui->type->setText("School");
+    }else if(TC->getTaskAt(taskselector).getType() == 4){
+        ui->type->setText("Other Activities");
+    }else if(TC->getTaskAt(taskselector).getType() == 0){
+        ui->type->setText("Empty task...");
+    }
 }
 
 void MainWindow::on_newTask_clicked()
@@ -43,6 +60,23 @@ void MainWindow::on_create_clicked()
 
 void MainWindow::on_refresh_clicked()
 {
-    ui->textleft1->setText(TC->getTaskAt(0).getName());
-    ui->textleft2->setText(TC->getTaskAt(0).getDesc());
+    refresh();
+}
+
+void MainWindow::on_next_clicked()
+{
+    if(taskselector < 14)
+        taskselector++;
+    QString s = QString::number(taskselector + 1);
+    ui->counter->setText(s);
+    refresh();
+}
+
+void MainWindow::on_prev_clicked()
+{
+    if(taskselector > 0)
+        taskselector--;
+    QString s = QString::number(taskselector + 1);
+    ui->counter->setText(s);
+    refresh();
 }

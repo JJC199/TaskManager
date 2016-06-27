@@ -19,6 +19,7 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    void refresh();
     ~MainWindow();
 
 private slots:
@@ -30,8 +31,12 @@ private slots:
 
     void on_refresh_clicked();
 
+    void on_next_clicked();
+
+    void on_prev_clicked();
+
 private:
-    int taskselector = 0;
+    int taskselector;
     taskcollection *TC = new taskcollection();
     Ui::MainWindow *ui;
 };

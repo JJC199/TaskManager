@@ -19,7 +19,6 @@ SOURCES += main.cpp\
     otheractivities_task.cpp \
     home_task.cpp \
     mainwindow.cpp \
-    newtask.cpp \
     taskcollection.cpp
 
 HEADERS  += \
@@ -29,9 +28,7 @@ HEADERS  += \
     otheractivities_task.h \
     home_task.h \
     mainwindow.h \
-    newtask.h \
     taskcollection.h
 
 FORMS    += \
-    mainwindow.ui \
-    newtask.ui
+    mainwindow.ui

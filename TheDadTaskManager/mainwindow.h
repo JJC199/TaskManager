@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "newtask.h"
 #include "work_task.h"
 #include "home_task.h"
 #include "school_task.h"
@@ -27,7 +26,13 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_create_clicked();
+
+    void on_refresh_clicked();
+
 private:
+    int taskselector = 0;
+    taskcollection *TC = new taskcollection();
     Ui::MainWindow *ui;
 };
 

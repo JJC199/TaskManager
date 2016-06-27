@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>533</width>
+    <width>894</width>
     <height>392</height>
    </rect>
   </property>
@@ -14,19 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="newTask">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>330</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Add New Task</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="logo">
     <property name="geometry">
      <rect>
@@ -46,7 +33,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>90</x>
       <y>80</y>
       <width>91</width>
       <height>31</height>
@@ -69,7 +56,7 @@
      <string>Task Description</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser_2">
+   <widget class="QTextBrowser" name="textleft2">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -79,7 +66,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="prev">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -92,7 +79,7 @@
      <string>Prev.</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="next">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -105,11 +92,11 @@
      <string>Next</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="refresh">
     <property name="geometry">
      <rect>
-      <x>444</x>
-      <y>10</y>
+      <x>10</x>
+      <y>40</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -118,14 +105,77 @@
      <string>Refresh</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser">
+   <widget class="QTextBrowser" name="textleft1">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>100</x>
       <y>110</y>
       <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textright1">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>110</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textright2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>160</y>
+      <width>271</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>320</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Work</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>School</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Other Activities</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="create">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>320</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create</string>
     </property>
    </widget>
   </widget>
